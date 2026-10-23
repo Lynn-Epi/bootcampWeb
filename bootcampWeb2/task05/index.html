@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodingPedia</title>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to CodingPedia!</h1>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Index</a></li>
+          <li><a href="php.html">PHP</a></li>
+          <li><a href="sql.html">SQL</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <p>
+        CodingPedia is a collective encyclopedia project on the Internet aiming
+        to be universal and multi-lingual which functions as a wiki. CodingPedia
+        has for goal to offer freely reusable objective and verifiable content
+        that anyone can modify and improve.
+      </p>
+
+      <form action="">
+          <label for="firstname">First name:</label>
+  <input type="text" id="firstname" name="firstname" required />
+  <br />
+
+  <label for="lastname">Last name:</label>
+  <input type="text" id="lastname" name="lastname" required />
+  <br />
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required />
+  <br />
+
+  <label for="age">Age:</label>
+  <input type="number" id="age" name="age" min="3" max="99" />
+  <br />
+
+  <label for="phone">Phone:</label>
+  <input
+    type="tel"
+    id="phone"
+    name="phone"
+    minlength="10"
+    maxlength="10"
+  />
+  <br />
+
+  <label>Sex:</label>
+
+  <input type="radio" id="male" name="sex" value="male" checked />
+  <label for="male">Male</label>
+
+  <input type="radio" id="female" name="sex" value="female" />
+  <label for="female">Female</label>
+  <br />
+
+  <label for="haircolor">Hair color:</label>
+  <input type="color" id="haircolor" name="haircolor" />
+  <br />
+
+  <label for="date">Date:</label>
+  <input type="date" id="date" name="date" required />
+  <br />
+
+  <label for="technology">Technology:</label>
+  <select id="technology" name="technology">
+    <option value="php">PHP</option>
+    <option value="sql">SQL</option>
+  </select>
+  <br />
+
+  <label for="question">Question:</label>
+  <textarea id="question" name="question" required></textarea>
+  <br />
+
+  <button type="submit">Submit</button>
+      </form>
+    </main>
+    <aside>
+      <p>
+        Hello, My name is Lynn I'm on an exchange semester, and i like to travel
+        cook and im just yapping to make filler words for this activity,
+        hopefully this is enough.
+      </p>
+    </aside>
+    <footer>
+      <address>
+        First name: Lynn<br />
+        Name: Perry Villarreal<br />
+        Address: Av Arnulfo Gonzalez, 189<br />
+        Phone: 0733333333
+      </address>
+    </footer>
+  </body>
+</html>

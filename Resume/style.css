@@ -1,0 +1,256 @@
+body {
+  margin: 0;
+}
+
+.desk {
+  width: 100%;
+  height: 100vh;
+
+  background-image: url("./Pictures/Background4.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+/* Contact stickers */
+.contact-div {
+  position: absolute;
+  top: 45%;
+  left: 47.5%;
+}
+
+.Contact-sticker {
+  position: absolute;
+  width: 100px;
+  top: 0%;
+  left: 0%;
+  filter: brightness(0.7);
+}
+/* Education stickers */
+.education {
+  position: absolute;
+  top: 63%;
+  left: 70%;
+  scale: 1.3;
+}
+.JU-sticker {
+  position: absolute;
+  height: 70px;
+  width: 60px;
+  top: 0;
+  left: 0;
+}
+.Epitech-sticker {
+  position: absolute;
+  width: 80px;
+  top: 0px;
+  left: -30px;
+  transform: rotate(-45deg);
+}
+
+/*  Coding Stickers */
+.coding-div {
+  position: absolute;
+  top: 56%;
+  left: 26%;
+  scale: 1;
+  width: 100px;
+  height: 150px;
+  border: 2px dashed red;
+}
+.python-sticker {
+  position: absolute;
+  height: 50px;
+  top: 6rem;
+  left: 2rem;
+}
+.JS-sticker {
+  position: absolute;
+  height: 50px;
+  top: 0;
+  left: 1.5rem;
+}
+.HTML-sticker {
+  position: absolute;
+  height: 50px;
+  top: 1.5rem;
+  left: 3.5rem;
+}
+
+.CSS-sticker {
+  position: absolute;
+  height: 50px;
+  top: 2rem;
+  left: 0;
+}
+.git-sticker {
+  position: absolute;
+  height: 50px;
+  top: 3.5rem;
+  left: 1.5rem;
+}
+/* AboutMe */
+.aboutMe-div {
+  position: absolute;
+  top: 32%;
+  left: 27%;
+  scale: 1;
+  width: auto;
+  height: 100px;
+}
+.bandera-sticker {
+  position: absolute;
+  height: 120px;
+}
+
+.travel-sticker {
+  position: absolute;
+  z-index: 100;
+  height: 100px;
+  width: auto;
+  left: 170px;
+  bottom: 40px;
+}
+.cooking-sticker {
+  position: absolute;
+  z-index: 100;
+  height: 70px;
+  width: auto;
+  left: -20px;
+  top: 70px;
+}
+.football-sticker {
+  position: absolute;
+  z-index: 100;
+  height: 70px;
+  width: auto;
+  left: 100px;
+  top: 80px;
+}
+
+/* hovering */
+.education,
+.aboutMe-div,
+.coding-div,
+.contact-div {
+  z-index: 1;
+}
+.education:has(img:hover),
+.aboutMe-div:has(img:hover),
+.coding-div:has(img:hover),
+.contact-div:has(img:hover) {
+  z-index: 100;
+}
+/* contact */
+
+/* .contact-div img {
+  /* filter 0.3s ease; }*/
+
+.contact-info {
+  display: none;
+  position: absolute;
+  left: -30px;
+  top: -30px;
+  width: 150px;
+  height: 150px;
+  border-radius: 1rem;
+  z-index: 100;
+  padding-left: 1rem;
+}
+
+.contact-div:hover .contact-info {
+  display: block;
+  background-color: white;
+  /* filter: drop-shadow(0 0 8px white); */
+}
+.contact-info button {
+  background-color: #252525;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin-left: 15px;
+  margin-top: 25px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+/* education */
+
+.education img {
+  transition: scale 0.3s ease;
+  /* filter 0.3s ease; */
+}
+
+.education:has(img:hover) img {
+  scale: 1.15;
+  filter: drop-shadow(0 0 8px white);
+}
+.education-info {
+  display: none;
+  position: absolute;
+  right: 5rem;
+  top: -60px;
+  width: 300px;
+  border-radius: 1rem;
+  z-index: 100;
+  padding-left: 1rem;
+}
+.education:has(img:hover) .education-info {
+  display: block;
+  background-color: white;
+  /* filter: drop-shadow(0 0 8px white); */
+}
+
+/* SKills */
+.coding-div img {
+  transition: scale 0.3s ease;
+  /* filter 0.3s ease; */
+}
+
+.coding-div:has(img:hover) img {
+  scale: 1.15;
+  filter: drop-shadow(0 0 8px white);
+}
+.coding-info {
+  scale: 1.3;
+  display: none;
+  position: absolute;
+  left: 14rem;
+  top: -60px;
+  width: 300px;
+  border-radius: 1rem;
+  z-index: 100;
+  padding-left: 1rem;
+}
+.coding-div:has(img:hover) .coding-info {
+  display: block;
+  background-color: white;
+  /* filter: drop-shadow(0 0 8px white); */
+}
+
+/* about me */
+
+.aboutMe-div img {
+  transition: scale 0.3s ease;
+  /* filter 0.3s ease; */
+}
+
+.aboutMe-div:has(img:hover) img {
+  scale: 1.1;
+  filter: drop-shadow(0 0 8px white);
+}
+.aboutMe-info {
+  scale: 1.3;
+  display: none;
+  position: absolute;
+  left: 20rem;
+  /* top: px; */
+  width: 200px;
+  border-radius: 1rem;
+  z-index: 100;
+  padding-left: 1rem;
+}
+.aboutMe-div:has(img:hover) .aboutMe-info {
+  display: block;
+  background-color: white;
+  /* filter: drop-shadow(0 0 8px white); */
+}
