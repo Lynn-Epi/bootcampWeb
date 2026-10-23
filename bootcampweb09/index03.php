@@ -12,3 +12,4 @@ echo $body;
 ?>
 </body>
 </html>
+<!-- http://127.0.0.1:8000/index03.php?page=home -->

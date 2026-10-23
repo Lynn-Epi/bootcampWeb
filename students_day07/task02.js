@@ -1,6 +1,18 @@
-let box = document.querySelector("footer div");
+const box = document.querySelector("footer div");
 
-box.addEventListener("click", function() {
-    let name = prompt("What's your name?");
-    let conf
+box.addEventListener("click", function () {
+  let name = "";
+
+  while (!name) {
+    name = prompt("What's your name?");
+  }
+
+  const confirmed = confirm(
+    `Are you sure that ${name} is your name ?`
+  );
+
+  if (confirmed) {
+    alert(`Hello ${name}!`);
+    box.textContent = `Hello ${name}!`;
+  }
 });

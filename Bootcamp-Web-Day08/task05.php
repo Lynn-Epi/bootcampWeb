@@ -10,3 +10,4 @@ function calc_average(array $numbers) {
     $average = $total / $length;
     return(round($average, 1));
 }
+var_dump(calc_average(array(1, 4, 28, 12, 3, 4, 4, 27)));
